@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body>
+    <header>
+        <img src="./img/Logo.svg">
+        <div>
+            <a href="">TECHNOLOGY</a>
+            <a href="">IDEAS</a>
+            <a href="">LEADERSHIP</a>
+            <a href="">VIDEO</a>
+            <a href="">NEWS</a>
+            <a href="">FINANCE</a>
+            <a href="">ENTERTAINMENT</a>
+        </div>
+        <img src="./img/Menu icon.svg">
+    </header>
+
+    <contents>
+        <div class="grid-container">
+            <div class="grid-item dark main"
+            style="grid-column-start: span 3; grid-row-start: span 2; background-image: url(./img/green-chameleon-176136.png);">
+            <div class="arrow"><img src="./img/Arrow-left.svg"></div>
+            <div class="item-content">
+                    <div>
+                        <div class="ribbon">Finance</div>
+                        <h1>This tie brand is bucking the retail<br>apocalypse with a massive store expansion</h1>
+                        <p>There is a lot of exciting stuff going on in the stars above us<br>that make astronomy so much fun. The truth is the universe<br>is a constantly changing, moving.</p>
+                    </div>
+                    <div class="response-buttons">
+                        <img src="./img/share.svg"><span>275</span>
+                        <img src="./img/view.svg"><span>275</span>
+                        <img src="./img/comment.svg"><span>12</span>
+                    </div>
+                </div>
+                <div class="arrow"><img src="./img/Arrow-right.svg"></div>
+            </div>
+            <div class="grid-item dark" style="background-image: url(./img/oliur-rahman-123819.png);">
+                <div class="ribbon">Finance</div>
+                <div class="item-content">
+                    <h2>Unmatched Toner Cartridge Quality: 20% Less Than OEM Price</h2>
+                    <div class="response-buttons">
+                        <img src="./img/share.svg"><span>275</span>
+                        <img src="./img/view.svg"><span>275</span>
+                        <img src="./img/comment.svg"><span>12</span>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item dark" style="grid-row-start: span 2; background-color: #FF565C;">
+                <div class="item-content">
+                    <h1>This tie brand is bucking the retail apocalypse with a massive store expansion</h1>
+                    <p>The universe is constantly changing, moving. Some would say it’s a “living” thing because you never know what you are going to see on any given night.</p><button>Read more</button></div>
+                </div>
+                
+                <div class="grid-item light" style="grid-row-start: span 2; padding: 2rem 0;">
+                    <div class="ribbon">Featured Stories</div>
+                    <div class="stories">
+                        <div class="story">Compare Prices: Find The Best Computer Accessory</div>
+                        <div class="story">Why You Should Use External IT Support</div>
+                        <div class="story">Why You Should Use In-House IT Support</div>
+                        <div class="story">Choosing The Best Audio Player Software</div>
+                        <div class="story">Addiction When Gambling Becomes A Problem</div>
+                    </div>
+            </div>
+
+            <div class="grid-item dark" style="grid-column-start: span 2; background-image: url(./img/oliur-rahman-272875.png);">
+                <div class="ribbon">Entertainment</div>
+                <div class="item-content">
+                    <h2>Here’s The Difference Between Used, Refurbished, Remarketed, And Rebuilt Electronic Equipment</h2>
+                    <div class="response-buttons">
+                        <img src="./img/share.svg"><span>275</span>
+                        <img src="./img/view.svg"><span>275</span>
+                        <img src="./img/comment.svg"><span>12</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item dark" style="background-image: url(./img/igor-son-285029.png);">
+                <div class="ribbon">Finance</div>
+                <div class="item-content">
+                    <h2>Optimize Your PC’s Performance With These 3 Programs</h2>
+                    <div class="response-buttons">
+                        <img src="./img/share.svg"><span>275</span>
+                        <img src="./img/view.svg"><span>275</span>
+                        <img src="./img/comment.svg"><span>12</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item dark" style="background-image: url(./img/crew-22235.png);">
+                <div class="ribbon">Gaming</div>
+                <div class="item-content">
+                    <h2>Search Engine Optimization And Advertising</h2>
+                    <div class="response-buttons">
+                        <img src="./img/share.svg"><span>275</span>
+                        <img src="./img/view.svg"><span>275</span>
+                        <img src="./img/comment.svg"><span>12</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item dark" style="background-image: url(./img/dose-media-344938.png);">
+                <div class="ribbon">Technology</div>
+                <div class="item-content">
+                    <h2>Where To Find Unique Myspace Layouts</h2>
+                    <div class="response-buttons">
+                        <img src="./img/share.svg"><span>275</span>
+                        <img src="./img/view.svg"><span>275</span>
+                        <img src="./img/comment.svg"><span>12</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </contents>
+
+    <footer>
+<img src="./img/Logo-white.svg">
+    </footer>
+</body>
+
+<script>
+Array.from(document.getElementsByClassName("story")).forEach((e, i) => {
+  e.before.textContent = i + 1;
+});
+
+</script>
+
+</html>
