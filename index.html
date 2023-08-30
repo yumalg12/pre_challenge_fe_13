@@ -11,13 +11,13 @@
     <header>
         <img src="./img/Logo.svg">
         <div>
-            <a href="">TECHNOLOGY</a>
-            <a href="">IDEAS</a>
-            <a href="">LEADERSHIP</a>
-            <a href="">VIDEO</a>
-            <a href="">NEWS</a>
-            <a href="">FINANCE</a>
-            <a href="">ENTERTAINMENT</a>
+            <a href="">Technology</a>
+            <a href="">Ideas</a>
+            <a href="">Leadership</a>
+            <a href="">Video</a>
+            <a href="">News</a>
+            <a href="">Finance</a>
+            <a href="">Entertainment</a>
         </div>
         <img src="./img/Menu icon.svg">
     </header>
@@ -28,8 +28,8 @@
             style="grid-column-start: span 3; grid-row-start: span 2; background-image: url(./img/green-chameleon-176136.png);">
             <div class="arrow"><img src="./img/Arrow-left.svg"></div>
             <div class="item-content">
+                <div class="ribbon">Finance</div>
                     <div>
-                        <div class="ribbon">Finance</div>
                         <h1>This tie brand is bucking the retail<br>apocalypse with a massive store expansion</h1>
                         <p>There is a lot of exciting stuff going on in the stars above us<br>that make astronomy so much fun. The truth is the universe<br>is a constantly changing, moving.</p>
                     </div>
@@ -55,17 +55,18 @@
             <div class="grid-item dark" style="grid-row-start: span 2; background-color: #FF565C;">
                 <div class="item-content">
                     <h1>This tie brand is bucking the retail apocalypse with a massive store expansion</h1>
-                    <p>The universe is constantly changing, moving. Some would say it’s a “living” thing because you never know what you are going to see on any given night.</p><button>Read more</button></div>
+                    <p>The universe is constantly changing, moving. Some would say it’s a “living” thing because you never know what you are going to see on any given night.</p>
+                    <button class="btn-outline">Read more</button></div>
                 </div>
                 
                 <div class="grid-item light" style="grid-row-start: span 2; padding: 2rem 0;">
                     <div class="ribbon">Featured Stories</div>
                     <div class="stories">
-                        <div class="story">Compare Prices: Find The Best Computer Accessory</div>
-                        <div class="story">Why You Should Use External IT Support</div>
-                        <div class="story">Why You Should Use In-House IT Support</div>
-                        <div class="story">Choosing The Best Audio Player Software</div>
-                        <div class="story">Addiction When Gambling Becomes A Problem</div>
+                        <div class="story"><span>Compare Prices: Find The Best Computer Accessory</span></div>
+                        <div class="story"><span>Why You Should Use External IT Support</span></div>
+                        <div class="story"><span>Why You Should Use In-House IT Support</span></div>
+                        <div class="story"><span>Choosing The Best Audio Player Software</span></div>
+                        <div class="story"><span>Addiction When Gambling Becomes A Problem</span></div>
                     </div>
             </div>
 
@@ -120,13 +121,34 @@
     </contents>
 
     <footer>
-<img src="./img/Logo-white.svg">
+        <div>
+            <img src="./img/Logo-white.svg">
+            <span>© 2018 Deck<br>Component based UI Kit</span>
+        </div>
+
+        <div>
+            <a href="">Technology</a>
+            <a href="">Leadership</a>
+            <a href="">News</a>
+            <a href="">Entertainment</a>
+            <a href="">Ideas</a>
+            <a href="">Video</a>
+            <a href="">Finance</a>
+        </div>
+
+        <div>
+            <div><span>Follow us:</span><img src="./img/instagram.svg"><img src="./img/pinterest.svg"><img src="./img/twitter.svg"><img src="./img/facebook.svg"></div>
+            <div><input type="text" placeholder="Your E-mail"><button class="btn-red">Subscribe</button></div>            
+        </div>
+
     </footer>
 </body>
 
 <script>
-Array.from(document.getElementsByClassName("story")).forEach((e, i) => {
-  e.before.textContent = i + 1;
+Array.from(document.querySelectorAll('.story')).forEach((e, i) => {
+  let label = document.createElement('label');
+  label.appendChild(document.createTextNode((i + 1)));
+  e.insertBefore(label, e.firstChild);
 });
 
 </script>

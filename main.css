@@ -37,48 +37,25 @@ contents{
     display: grid;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 2rem;
-}
-
-.grid-item {
-    min-height: 12rem;
-    background-position: center;
-    background-size: cover;
-    padding: 2rem 0;
-}
-
-.grid-item.main {
-    text-align: center;
-    display: grid;
-    grid-template-columns: 50px 1fr 50px;
-    align-items: center;
-}
-
-.grid-item.main .ribbon {
-    display: inline-block;
-    margin-bottom: 2rem;
-}
-
-.grid-item.main .item-content {
-    justify-content: center;
-}
-
-.arrow{
-    background-color: #1D1F24;
-    padding: 17px;
-    width: fit-content;
-    height: fit-content;
-}
 
 footer{
     color: white;
     background-color: #1D1F24;
     height: 160px;
     margin-top: 6rem;
+    display: grid;
+    grid-template-columns: 16rem 1fr 16rem;
+}
+
+footer:first-child span{
+    color: #ffffffb3;
+}
+
+footer:nth-child(2) a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 h1{
@@ -105,16 +82,68 @@ p{
     margin-bottom: 2rem;
 }
 
-button{
-    padding: 1rem 4rem;
-    border: 1px solid #ffffff46;
-    background: none;
+button {
     font-family: 'Oswald';
     text-transform: uppercase;
     color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-outline{
+    padding: 1rem 4rem;
+    border: 1px solid #ffffff46;
+    background: none;
     font-size: 1rem;
-    letter-spacing: 1px;
     border-bottom: 3px solid white;
+}
+
+.btn-red{
+    padding: 0.6rem 2rem;
+    background-color: #FF565C;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.grid-item {
+    min-height: 12rem;
+    background-position: center;
+    background-size: cover;
+    padding: 2rem 0;
+}
+
+.grid-item.main {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    align-items: center;
+}
+
+.grid-item.main .ribbon {
+    display: inline-block;
+    position: relative;
+    top: 6rem;
+}
+
+.grid-item.main .item-content {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-content: space-between;
+    height: 100%;
+}
+
+.arrow{
+    background-color: #1D1F24;
+    padding: 17px;
+    width: fit-content;
+    height: fit-content;
 }
 
 .ribbon{
@@ -130,8 +159,8 @@ button{
     padding: 0 1.5rem;
     min-height: 12rem;
     display: flex;
-    align-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .dark{
@@ -155,7 +184,19 @@ button{
     align-items: center;
 }
 
+.stories{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 .story{
     border-bottom: 1px solid #F2F3F6;
-    padding: 0 1rem 3rem 1rem;
+    padding: 1.5rem 2rem;
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    letter-spacing: -0.5px;
+}
+
+.story > label{
+    color: #1d1f242a;
 }
