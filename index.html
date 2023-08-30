@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
-    <link rel="stylesheet" type="text/css" href="main.css" />
+
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="./css/class.css" />
+    <link rel="stylesheet" type="text/css" href="./css/responsive.css" />
 </head>
+
 <body>
     <header>
-        <img src="./img/Logo.svg">
+        <div>
+            <img src="./img/Logo.svg">
+        </div>
         <div>
             <a href="">Technology</a>
             <a href="">Ideas</a>
@@ -19,19 +25,21 @@
             <a href="">Finance</a>
             <a href="">Entertainment</a>
         </div>
-        <img src="./img/Menu icon.svg">
+        <div>
+            <img src="./img/Menu icon.svg">
+        </div>
     </header>
 
     <contents>
         <div class="grid-container">
-            <div class="grid-item dark main"
-            style="grid-column-start: span 3; grid-row-start: span 2; background-image: url(./img/green-chameleon-176136.png);">
-            <div class="arrow"><img src="./img/Arrow-left.svg"></div>
-            <div class="item-content">
-                <div class="ribbon">Finance</div>
+            <div class="grid-item dark main" style="background-image: url(./img/green-chameleon-176136.png);">
+                <div class="arrow"><img src="./img/Arrow-left.svg"></div>
+                <div class="item-content">
+                    <div class="ribbon">Finance</div>
                     <div>
-                        <h1>This tie brand is bucking the retail<br>apocalypse with a massive store expansion</h1>
-                        <p>There is a lot of exciting stuff going on in the stars above us<br>that make astronomy so much fun. The truth is the universe<br>is a constantly changing, moving.</p>
+                        <h1>This tie brand is bucking the retail apocalypse with a massive store expansion</h1>
+                        <p>There is a lot of exciting stuff going on in the stars above us that make astronomy so much
+                            fun. The truth is the universe is a constantly changing, moving.</p>
                     </div>
                     <div class="response-buttons">
                         <img src="./img/share.svg"><span>275</span>
@@ -55,25 +63,29 @@
             <div class="grid-item dark" style="grid-row-start: span 2; background-color: #FF565C;">
                 <div class="item-content">
                     <h1>This tie brand is bucking the retail apocalypse with a massive store expansion</h1>
-                    <p>The universe is constantly changing, moving. Some would say it’s a “living” thing because you never know what you are going to see on any given night.</p>
-                    <button class="btn-outline">Read more</button></div>
+                    <p>The universe is constantly changing, moving. Some would say it’s a “living” thing because you
+                        never know what you are going to see on any given night.</p>
+                    <button class="btn-outline">Read more</button>
                 </div>
-                
-                <div class="grid-item light" style="grid-row-start: span 2; padding: 2rem 0;">
-                    <div class="ribbon">Featured Stories</div>
-                    <div class="stories">
-                        <div class="story"><span>Compare Prices: Find The Best Computer Accessory</span></div>
-                        <div class="story"><span>Why You Should Use External IT Support</span></div>
-                        <div class="story"><span>Why You Should Use In-House IT Support</span></div>
-                        <div class="story"><span>Choosing The Best Audio Player Software</span></div>
-                        <div class="story"><span>Addiction When Gambling Becomes A Problem</span></div>
-                    </div>
             </div>
 
-            <div class="grid-item dark" style="grid-column-start: span 2; background-image: url(./img/oliur-rahman-272875.png);">
+            <div class="grid-item light" style="grid-row-start: span 2; padding-top: 2rem;">
+                <div class="ribbon">Featured Stories</div>
+                <div class="stories">
+                    <div class="story"><span>Compare Prices: Find The Best Computer Accessory</span></div>
+                    <div class="story"><span>Why You Should Use External IT Support</span></div>
+                    <div class="story"><span>Why You Should Use In-House IT Support</span></div>
+                    <div class="story"><span>Choosing The Best Audio Player Software</span></div>
+                    <div class="story"><span>Addiction When Gambling Becomes A Problem</span></div>
+                </div>
+            </div>
+
+            <div class="grid-item dark"
+                style="grid-column-start: span 2; background-image: url(./img/oliur-rahman-272875.png);">
                 <div class="ribbon">Entertainment</div>
                 <div class="item-content">
-                    <h2>Here’s The Difference Between Used, Refurbished, Remarketed, And Rebuilt Electronic Equipment</h2>
+                    <h2>Here’s The Difference Between Used, Refurbished, Remarketed, And Rebuilt Electronic Equipment
+                    </h2>
                     <div class="response-buttons">
                         <img src="./img/share.svg"><span>275</span>
                         <img src="./img/view.svg"><span>275</span>
@@ -123,7 +135,7 @@
     <footer>
         <div>
             <img src="./img/Logo-white.svg">
-            <span>© 2018 Deck<br>Component based UI Kit</span>
+            <span>© 2018 Deck Component based UI Kit</span>
         </div>
 
         <div>
@@ -137,19 +149,20 @@
         </div>
 
         <div>
-            <div><span>Follow us:</span><img src="./img/instagram.svg"><img src="./img/pinterest.svg"><img src="./img/twitter.svg"><img src="./img/facebook.svg"></div>
-            <div><input type="text" placeholder="Your E-mail"><button class="btn-red">Subscribe</button></div>            
+            <div><span>Follow us:</span><img src="./img/instagram.svg"><img src="./img/pinterest.svg"><img
+                    src="./img/twitter.svg"><img src="./img/facebook.svg"></div>
+            <div><input type="text" placeholder="Your E-mail"><button class="btn-red">Subscribe</button></div>
         </div>
 
     </footer>
 </body>
 
 <script>
-Array.from(document.querySelectorAll('.story')).forEach((e, i) => {
-  let label = document.createElement('label');
-  label.appendChild(document.createTextNode((i + 1)));
-  e.insertBefore(label, e.firstChild);
-});
+    Array.from(document.querySelectorAll('.story')).forEach((e, i) => {
+        let label = document.createElement('label');
+        label.appendChild(document.createTextNode((i + 1)));
+        e.insertBefore(label, e.firstChild);
+    });
 
 </script>
 

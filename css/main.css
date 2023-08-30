@@ -12,10 +12,14 @@ header{
     border-bottom: 1px solid #EBEBEB;
     height: 88px;
     display: grid;
-    grid-template-columns: 8rem 1fr 4rem;
+    grid-template-columns: 8rem 1fr 8rem;
     align-items: center;
-    padding-left: 2.5rem;
+    padding: 0 2.5rem;
     padding-bottom: 2px;
+}
+
+header div:last-child {
+    justify-content: flex-end;
 }
 
 header a{
@@ -127,116 +131,4 @@ button {
     font-weight: 500;
     width: fit-content;
     border: none;
-}
-
-.btn-outline{
-    padding: 1rem 4rem;
-    border: 1px solid #ffffff46;
-    background: none;
-    font-size: 1rem;
-    border-bottom: 3px solid white;
-}
-
-.btn-red{
-    padding: 0.6rem 2rem;
-    background-color: #FF565C;
-    position: relative;
-    top: 1px;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 2rem;
-}
-
-.grid-item {
-    min-height: 12rem;
-    background-position: center;
-    background-size: cover;
-    padding: 2rem 0;
-}
-
-.grid-item.main {
-    text-align: center;
-    display: grid;
-    grid-template-columns: 50px 1fr 50px;
-    align-items: center;
-}
-
-.grid-item.main .ribbon {
-    display: inline-block;
-    position: relative;
-    top: 6rem;
-}
-
-.grid-item.main .item-content {
-    display: grid;
-    justify-items: center;
-    justify-content: center;
-    align-content: space-between;
-    height: 100%;
-}
-
-.arrow{
-    background-color: #1D1F24;
-    padding: 17px;
-    width: fit-content;
-    height: fit-content;
-}
-
-.ribbon{
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    background-color: #FF565C;
-    padding: 0.7rem 2rem;
-    letter-spacing: 2px;
-    width: fit-content;
-}
-
-.item-content{
-    padding: 0 1.5rem;
-    min-height: 12rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.dark{
-    color: white;
-    background-color: black;
-}
-
-.light{
-    background-color: white;
-}
-
-.light > .ribbon{
-    color:#1D1F24;
-    background-color: white;
-    font-weight: bold;
-}
-
-.response-buttons{
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-
-.stories{
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.story{
-    border-bottom: 1px solid #F2F3F6;
-    padding: 1.8rem 2rem;
-    display: grid;
-    grid-template-columns: 2rem 1fr;
-    letter-spacing: -0.5px;
-}
-
-.story > label{
-    color: #1d1f242a;
 }
